@@ -5,7 +5,7 @@ console.log(firstName);
 /* There are 7 datatypes in javascript*/
 //string
 let newName = "brandon";
-
+let lastName = "mcdonald";
 //number (double or integer)
 let newNumber = 1;
 
@@ -35,3 +35,16 @@ console.log(typeof true);
 console.log(typeof null);
 
 
+//let - variables that can change later
+//const - variabels that do NOT change
+//var - don't use this.
+//var was before ES6. it is scoped to the 
+
+const now = 2020;
+const ageMadeline = 1995;
+const ageBrandon = 1990;
+const ageChris = 1985;
+console.log(ageMadeline, ageBrandon, ageChris);
+
+console.log(ageBrandon * 2, ageChris / 10, 2 ** 6);
+console.log(firstName.toUpperCase() + " " + lastName.toUpperCase());
