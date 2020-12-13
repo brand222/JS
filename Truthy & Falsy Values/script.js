@@ -55,3 +55,10 @@ else {
 
 
 //here is a bug-catching case
+let height = 0;
+if (height) {
+    console.log("Yay! Height is defined");
+}
+else {
+    console.log("Height is UNDEFINED");
+}
