@@ -23,8 +23,8 @@ koalas score 65, 54, and 49.
 */
 
 const calcAverage = (score1, score2, score3) => {
-    return (score1 + score2 + score3) / 3;
-}
+  return (score1 + score2 + score3) / 3;
+};
 
 //scenario where both tie
 const avgDolphins = calcAverage(44, 23, 71);
@@ -39,18 +39,19 @@ const avgDolphins3 = calcAverage(88, 46, 142);
 const avgKoalas3 = calcAverage(44, 23, 71);
 
 const checkWinner = function (avgDolphins, avgKoalas) {
-    if (avgDolphins >= avgKoalas * 2) {
-        console.log(`The dolphins WIN with a score of ${avgDolphins} vs 
-        the koalas score of ${avgKoalas}.`)
-    }
-    else if (avgKoalas >= avgDolphins * 2) {
-        console.log(`The koalas WIN with a score of ${avgKoalas} vs 
-        the dolphins score of ${avgDolphins}.`)
-    }
-    else {
-        console.log(`no one wins due to dophins scoring ${avgDolphins} vs koalas scoring ${avgKoalas}.`)
-    }
-}
+  if (avgDolphins >= avgKoalas * 2) {
+    console.log(`The dolphins WIN with a score of ${avgDolphins} vs 
+        the koalas score of ${avgKoalas}.`);
+  } else if (avgKoalas >= avgDolphins * 2) {
+    console.log(`The koalas WIN with a score of ${avgKoalas} vs 
+        the dolphins score of ${avgDolphins}.`);
+  } else {
+    console.log(
+      `no one wins due to dophins scoring ${avgDolphins} 
+    vs koalas scoring ${avgKoalas}.`
+    );
+  }
+};
 
 //output your winners
 checkWinner(avgDolphins, avgKoalas);
