@@ -73,7 +73,7 @@ for (let i = brandonArray.length - 1; i >= 0; i--) {
 
 backwardsArray.forEach((number) => console.log(number));
 
-//loop inside of a loop
+//nested for loops
 //here for each exercise, we have 5 reps
 console.log('-------------LOOP INSIDE OF A LOOP-------------');
 for (let exercise = 1; exercise < 4; exercise++) {
