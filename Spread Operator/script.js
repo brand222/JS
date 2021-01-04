@@ -137,11 +137,9 @@ add(...x);
 resturaunt.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 resturaunt.orderPizza('mushrooms');
 
-
-
-
 /* 
 
 KEY TAKE-AWAY:
 Spread operator is used where you would enter VALUES separated by commas.
 Rest operator is used where you would enter VARIABLES separated by commas ()
+*/
