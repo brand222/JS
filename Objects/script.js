@@ -1,11 +1,11 @@
-'use strict'
+'use strict';
 //you can access this array via index
 const brandonArray = [
-    'Brandon',
-    'McDonald',
-    2020 - 1990,
-    'Entreprenuer',
-    ['brandon', 'mcdonald', 30]
+  'Brandon',
+  'McDonald',
+  2020 - 1990,
+  'Entreprenuer',
+  ['brandon', 'mcdonald', 30],
 ];
 
 //here is an object literal
@@ -41,7 +41,7 @@ const brandonArray = [
 // if (brandon[interestedIn]) {
 //     console.log(brandon[interestedIn]);
 // }
-// //if this evaluates to false (or UNDEFINED) 
+// //if this evaluates to false (or UNDEFINED)
 // else {
 //     console.log(`Wrong request! choose
 //     between firstName, lastName, age, job, and friends`);
@@ -57,21 +57,21 @@ const brandonArray = [
 // friend is called ${brandon.friends[brandon.friends.indexOf("Max")]}`);
 
 const brandon = {
-    firstName: 'Brandon',
-    lastName: 'McDonald',
-    birthYear: 1990,
-    job: 'programmer',
-    friends: ['Max', 'Micah', 'Parker'],
-    hasDriversLicense: true,
-    //any function that is attached to an object is a method
-    calcAge: function () {
-        this.age = 2020 - this.birthYear;
-        return this.age;
-    },
-    getSummary: function () {
-        return `${this.firstName} is a ${this.age} year-old ${this.job}, and he 
+  firstName: 'Brandon',
+  lastName: 'McDonald',
+  birthYear: 1990,
+  job: 'programmer',
+  friends: ['Max', 'Micah', 'Parker'],
+  hasDriversLicense: true,
+  //any function that is attached to an object is a method
+  calcAge: function () {
+    this.age = 2020 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.age} year-old ${this.job}, and he 
         has ${this.hasDriversLicense ? 'a' : 'no'} drivers license!`;
-    }
+  },
 };
 
 console.log(brandon.calcAge());
@@ -81,3 +81,27 @@ console.log(`brandon is ${brandon['calcAge']()} years old.`);
 
 console.log(brandon.getSummary());
 
+/*
+property names of an object
+*/
+const properties = Object.keys(brandon);
+console.log(properties);
+for (const day of Object.keys(brandon)) {
+  console.log(day);
+}
+
+/*
+property values of an object
+*/
+const values = Object.values(brandon);
+console.log(values);
+
+/*
+property names and values together
+*/
+const keyValuePairs = Object.entries(brandon);
+console.log(keyValuePairs);
+
+for (const [keys, values] of keyValuePairs) {
+  console.log(`${keys} and ${values}`);
+}
